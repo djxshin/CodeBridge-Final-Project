@@ -1,0 +1,3273 @@
+
+/* <!-- I purposely made all the pages except the index/home page identical, format and ect.
+     This process took a while for everything to match up, but I did it for the flow the pages and overall mininmalism
+    I filled comments on this --> */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~UNIVERSAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+Body{
+    background-color:black;
+    /* setting background color */
+    border:white;
+    /* white border against dark background for visual pop */
+}
+
+a{
+    margin-top:10px;
+    margin-bottom:15px;
+    /* wanted to even out the link to make it look like a box logo */
+    text-decoration: none;
+    color:white;
+    background-color:red;
+    margin-top:10px;
+    /* Nav links centered with margin, made to looks like box logo */
+}
+
+#usa:hover {
+    
+    transition:1s;
+    background-image: url(images/USA.png);
+    background-size: 100% 100%;
+    height:25px;
+   
+    /* hover over all the icons, image used is a flag of each store's
+    persective countires, wanted to extnd the height of the hover image to 25px.
+    /* added a short transition to make it look smoother.
+    Background-size 100% 100% to fit div*/
+     
+   
+}
+#uk:hover {
+    
+    transition:1s;
+    background-image: url(images/Great-Britian.png);
+    background-size: 100% 100%;
+    height:25px;
+    /* hover over all the icons, image used is a flag of each store's
+    persective countires, wanted to extnd the height of the hover image to 25px.
+    /* added a short transition to make it look smoother.
+    Background-size 100% 100% to fit div*/
+}
+#france:hover {
+    
+    transition:1s;
+    background-image: url(images/france.png);
+    background-size: 100% 100%;
+    height:25px;
+   /* hover over all the icons, image used is a flag of each store's
+    persective countires, wanted to extnd the height of the hover image to 25px.
+    /* added a short transition to make it look smoother.
+    Background-size 100% 100% to fit div*/
+}
+#japan:hover {
+    
+    transition:1s;
+    background-image: url(images/japan.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:25px;
+    color:black;
+    /* chose black for this hover bc japanese flag is white as well
+    as the font  */
+    /* hover over all the icons, image used is a flag of each store's
+    persective countires, wanted to extnd the height of the hover image to 25px.
+    /* added a short transition to make it look smoother.
+    Background-size 100% 100% to fit div*/
+}
+li{
+    list-style-type: none;
+    margin-left: 150px;
+    padding: 2px;
+    font-size: 15px;
+    font-weight:bold;
+    /* padding for breathing room, margin for centering, font to make it pop */
+   /* hover over all the icons, image used is a flag of each store's
+    persective countires, wanted to extnd the height of the hover image to 25px.
+    /* added a short transition to make it look smoother.
+    Background-size 100% 100% to fit div*/
+}
+ul{
+    color:white;
+   /* table font color */
+    
+    
+}
+h1{
+    color:white;
+    font-weight:bold;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    text-align: center;
+    margin-top:-5px;
+}
+span{
+    color:white;
+    border:solid;
+    background-color:red;
+    font-family: bold italic;
+    text-shadow:none;
+    /* to make supreme letter in red. */
+    /* box logostyle */
+}
+#visitfontU{
+    color: white;
+    /* recommendations font color */
+}
+#googlemapU{
+    margin-left: 20px;
+    margin-top:25px;
+    /* centered */
+ 
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~INDEX~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.container > div {
+    border:solid white;
+    /* border for the grid */
+}
+
+.container{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 700px 350px 300px 600px 700px; ;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2"
+    "footer footer footer footer"
+    "wu wu wu wu"
+    "world world world world";
+    grid-gap: 10px;
+    /* gap between grids */
+    background-image:  url(images/background.jpg); 
+    /* https://wallpapertag.com/ */
+  
+    
+
+}
+.header{
+    grid-area: header; 
+    text-align: center;
+    /* text centering */
+    background-image: url(images/box-logo.gif);
+    /* https://img.buzzfeed.com/ */
+    background-size: contain;
+   
+    background-position: center;
+    /* position center */
+    background-repeat: no-repeat;
+    background-color: black;
+     /* no repeat, wanted the image in the middle */
+    
+   
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    /* flex to have the nav A-links spaced evenly */
+    justify-content: space-evenly;
+    /* spaced evenly */
+    background-color:black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+   
+}
+.blog{
+    grid-area: blog;
+    
+    background-size: 100% 100%;
+    /* fit the whole image on div */
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    /* start at full */
+    background-image: url(images/supremeWorld.jpg);
+    /* https://process.fs.grailed.com/ */
+    /* wanted this section of the grid to be a background picture for
+    each individual store, as the image fades out the table of info
+    fades in.  opacity starts at 1  */
+
+}
+blog:hover {
+    opacity: 1;
+    /* when hovered over opacity at 1 */
+    transition: 4s;
+    /* span of 4secs */
+}  
+
+.blog2{
+    grid-area: blog2;
+       
+}
+.blog3{
+    grid-area: footer;
+  
+    
+
+}
+#question1{
+    opacity: 0;
+    background-color: red;
+    color:white;
+    font-family: bold italic;
+    margin-left: 20px;
+    text-shadow: none;
+    /* pop up box  */
+}
+   
+#buttonQ{
+       width:400px;
+       height:100px;
+       font-weight: bold;
+       font-size:20px;
+       margin-left: 450px;
+       /* the button box for the question */
+       
+
+}
+audio{
+    margin-top: 10px;
+    /* center */
+}
+
+.wutang{
+grid-area: wu;
+display: flex;
+/* line up div */
+justify-content: space-evenly;
+/* space div */
+background-color: black;
+opacity:0
+}
+
+.wutang:hover{
+    /* hover the two photos in .wu */
+    opacity:1;
+    /* appear when hovering */
+    transition:5s;
+    /* smooth in and out */
+}
+
+#rae{
+width:600px;
+height:500px;
+/* size */
+background-image: url(images/bogo/raekwon.jpg);
+/* https://process.fs.grailed.com/ */
+background-size: 100% 100%;
+/* photo and sizing */
+margin-top: 50px;
+/* center y-axis */
+
+
+}
+#rza{
+width:600px;
+height:500px;
+background-image: url(images/bogo/RZA.jpg);
+/* https://process.fs.grailed.com/ */
+background-size: 100% 100%;
+
+margin-top: 50px;
+/* placement */
+}
+#chef{
+    margin-top:15px;
+    /* placement */
+}
+#rza1{
+    margin-top:15px;
+}
+
+#world{
+    grid-area:world;
+    background-image: url(images/worldmap.jpg);
+    /* https://images6.alphacoders.com/ */
+    background-size: 100% 100%;
+    position:relative;
+    /* set relative for #blimp to have priority */
+}
+#blimp{
+    height:200px;
+    width: 340px;
+    background-image: url(images/blimp.png);
+    /* thumbnail.image.rakuten.co.jp */
+    background-size:100% 100%;
+    opacity:0.8;
+    /* viiblity  */
+    position: absolute;
+    /* in front */
+}
+
+
+
+
+
+
+.lil{
+position:absolute;
+/* make table infront */
+opacity:0;
+/* starts out invisible */
+
+}
+.lil:hover{
+    opacity: 0.9;;
+    /* table transparency, visible yet, see through */
+    transition: 3s;
+    /* smooth entry */
+    
+
+}
+td{
+    
+    /* lines through table data */
+     text-decoration: none;
+ }
+ #tablep3{
+     margin-top:250px;
+     margin-left:340px;
+     /* centering */
+     position: absolute;
+     width:700px;
+     /* table size x-axis */
+     height:200px;
+     /* table height */
+     table-layout: fixed;
+     /* made the table 50/50 split space columns */
+     background-color: aliceblue;
+     /* contrasting color */
+     opacity:0.8;
+     /* somewhat see through */
+
+ }
+#youtube{
+    margin-left:400px;
+    margin-top:15px;
+    /* centering youtube vid */
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.containerLA > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerLA{
+    display: grid;
+    /* /fomat */
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* credited */
+    
+
+}
+
+/* same as index page */
+.headerLA{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(/images/box-logo.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.headerLA2{ 
+    grid-area: header2;
+    /* image header */
+    background-image: url(images/LApano.jpeg);
+    /* https://upload.wikimedia.org/ */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.textboxLA{
+    display:flex;
+    /* moving the item via flex */
+    justify-content: center;
+    /* wanted the city name to be centered */
+    margin-top: -50px;
+    /* raise the text higher to the top. */
+    opacity:0.8;
+    /* don't want to take attention away from background pic. */
+    
+}
+#cityLA{
+    /* keyframe font that moves across the header */
+    font-weight: bold;
+    /* thick font */
+    color: white;
+    /* color of font */
+    font-family: bold italic;
+    /* close to original supreme font */
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveLA 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveLA {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+    
+}
+
+.navLA{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    /* with fixed position, had to reset the x-axis */
+    opacity: 0.9;
+    /* wanted to be little transparent  */
+}
+.blogLA{
+    grid-area: blog;
+    background-image: url(images/supreme-los-angeles.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   /* same as .blog */
+    
+
+}
+.blogLA:hover {
+    opacity: 1;
+     /* when hovered over opacity at 1 */
+    transition: 4s;
+    /* span of 4secs */
+}  
+
+.blogLA2{
+    grid-area: blog2;
+   
+}
+
+
+.lilLA{
+position:absolute;
+/* make table infront */
+opacity:0;
+/* starts out invisible */
+
+z-index:3;
+}
+.lilLA:hover{
+    opacity:.9;
+    /* table transparency, visible yet, see through */
+ 
+    transition: 3s;
+     /* smooth entry */
+    z-index:3;
+}
+td{
+    
+    /* lines through table data */
+     text-decoration: none;
+ }
+ #tablep3{
+     margin-top:250px;
+     margin-left:340px;
+     /* centering */
+     position: absolute;
+     width:700px;
+     /* table size x-axis */
+     height:200px;
+     /* table height */
+     table-layout: fixed;
+     /* made the table 50/50 split space columns */
+     
+     z-index:3;
+     background-color: aliceblue;
+     opacity:0.8;
+
+ }
+
+ .OverflowParent > div{
+    border:white;
+    /* inner grid set up */
+}
+
+.OverflowParent{
+    display:grid;
+    /* /fomat */
+    grid-template-columns: 650px 800px 900px 1000px;
+     /* defining how many columns there will be */
+    grid-template-rows: 300px 200px 200px;
+      /* define how many rows there will be */
+    grid-template-areas: 
+    "section1 section2 section4 sectionX"
+    "section1 section2 section5 sectionX"
+    "section3 section2 section5 sectionX";
+    grid-gap:10px;
+    grid-area: blog2;
+  
+    overflow-x: scroll;
+    /* this container has a side scroll */
+    overflow-y: hidden;
+    /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+}
+
+.kid{
+    grid-area: section1;
+    /* grid area that contains google map */
+    
+}
+#openLA{
+    /* id for button for modal */
+    grid-area: section2;
+    /* https://gmcdn-sxcqif3sepi.netdna-ssl.com/ */
+    background-image: url(images/supreme-fairfax.jpeg);
+    background-size:100% 100%;
+   
+}
+.kid2{
+    grid-area: section3;
+    background-color: black;
+    /* suggestions  */
+}
+#openLA1{
+    grid-area: section4;
+   
+    /* https://image-cdn.hypb.st/ */
+    background-image: url(images/bogo/LA.jpg);
+    background-size:100% 100%
+}
+.kid4{
+    grid-area: section5;
+
+}
+#youtubeLA{
+    margin-top:45px;
+    margin-left:150px;
+    /* centering */
+}
+
+
+
+/* modal fairfax pic starts************************************/
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+ /* the modal box CSS */
+.modal-inside {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+  
+}
+/* The Close Button */
+.closeLA {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+    /* div for the close button */
+}
+.LAX:hover,
+/* the close button on modal "X" appear on hover */
+.LAX:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    /* css for the "X" close button */
+}
+
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    /* relative */
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal1-inside1 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeLA1 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.LAX1:hover,
+.LAX1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    /* "X" button focus and hover */
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NYC~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* uncommnted portion same as **LA** */
+
+.containerNYCm> div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerNYCm{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "navN navN navN navN"
+    "headerN headerN headerN headerN"
+    "header2 header2 header2 header2"
+    "blogN blogN blogN blogN"
+    "blogN2 blogN2 blogN2 blogN2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+     /* credited */
+
+}
+
+/* same as index page */
+.headerNYCm{
+    grid-area: headerN; 
+    text-align: center;
+    /* https://static.highsnobiety.com */
+    background-image: url(/images/box-logo.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerNYCm2{ 
+    grid-area: header2;
+    /* http://www.launchphotography.com/ */
+    background-image: url(images/NYCpano.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.textboxNYCm{
+   
+    
+    display:flex;
+    /* moving the item via flex */
+    justify-content: center;
+    /* wanted the city name to be centered */
+    margin-top: -50px;
+    /* raise the text higher to the top. */
+    opacity:0.8;
+    /* don't want to take attention away from background pic. */
+    
+}
+#cityNYCm{
+   
+    font-weight: bold;
+    color: white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveNY 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+    
+}
+@keyframes moveNY {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+    
+}
+.navNYCm{
+    grid-area: navN;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    /* with fixed position, had to reset the x-axis */
+    opacity: 0.9;
+    /* wanted to be little transparent  */
+    
+}
+.blogNYCm{
+    grid-area: blogN;
+    /* https://www.nycgo.com/ */
+    background-image: url(images/supreme-NYC-Lafayette.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+
+    
+
+}
+.blogNYCm:hover {
+    opacity: 1;
+   
+    transition: 4s;
+}  
+
+.blogNYCm2{
+    grid-area: blogN2;
+}
+
+.lilNYC{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilNYC:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+    
+     }
+    
+     .OverflowParentNY > div{
+        border:white;
+    }
+    
+    .OverflowParentNY{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+        
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
+    }
+    
+    .kidNY{
+        grid-area: section1;
+        
+        
+    }
+    #openNY{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/NYC.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2NY{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openNY1{
+        grid-area: section4;
+        border:solid;
+        background-color: darkorange;
+        background-image: url(images/bogo/NYC.jpg);
+        background-size:100% 100%
+    }
+    .kid4NY{
+        grid-area: section5;
+       
+       
+    }
+    #youtubeNY{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+    
+
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal2-inside2 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeNY {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.NYX:hover,
+.NYX:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NYC BROOKLYN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* uncommnted portion same as **LA** */
+
+
+.containerBK> div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerBK{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "navN navN navN navN"
+    "headerN headerN headerN headerN"
+    "header2 header2 header2 header2"
+    "blogN blogN blogN blogN"
+    "blogN2 blogN2 blogN2 blogN2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+     /* https://wallpapertag.com/ */
+
+}
+
+
+.headerBK{
+    grid-area: headerN; 
+    text-align: center;
+    background-image: url(/images/box-logo.gif);
+      /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerBK2{ 
+    grid-area: header2;
+    background-image: url(images/BKpano2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.textboxBK{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top: -50px;
+    /* raise the text higher to the top. */
+    opacity:0.8;
+    
+}
+#cityBK{
+    
+    font-weight: bold;
+    color: white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveBK 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+    
+}
+@keyframes moveBK {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+    
+}
+
+.navBK{
+    grid-area: navN;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:black;
+    position: fixed;
+     /* wanted the nav bar to stay along the entire page */
+     width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+}
+.blogBK{
+    grid-area: blogN;
+    background-image: url(images/supreme-NYC-Brooklyn.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    
+    
+
+}
+.blogBK:hover {
+    opacity: 1;
+   
+    transition: 3s;
+}  
+
+.blogBK2{
+    grid-area: blogN2;
+}
+
+.lilBK{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilBK:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+    
+     }
+
+     .OverflowParentBK > div{
+        border:white;
+    }
+    
+    .OverflowParentBK{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+       
+        overflow-x: scroll;
+          /* this container has a side scroll */
+        overflow-y: hidden;
+        /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+        
+    }
+    
+    .kidBK{
+        grid-area: section1;
+       
+       
+    }
+    #openBK{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/BK.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2BK{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openBK1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/BK.jpg);
+        background-size:100% 100%
+    }
+    .kid4BK{
+        grid-area: section5;
+        border:solid;
+       
+    }
+    #youtubeBK{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal3-inside3 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeBK {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont3:hover,
+.mcont3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ London~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.containerL > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerL{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* https://wallpapertag.com/ */
+
+}.headerL{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(/images/box-logo.gif);
+      /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerL2{ 
+    grid-area: header2;
+    background-image: url(images/londonpano.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.textboxL{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top: -50px;
+    /* raise the text higher to the top. */
+    opacity:0.7;
+    
+}
+#cityL{
+    
+    font-weight: bold;
+    color: white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveL 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+@keyframes moveL {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+    
+}
+.navL{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+}
+.blogL{
+    grid-area: blog;
+    background-image: url(images/supreme-GB-London.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   
+    
+
+}
+.blogL:hover {
+    opacity: 1;
+   
+    transition: 3s;
+}  
+
+.blogL2{
+    grid-area: blog2;
+   
+}
+
+.lilL{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilL:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+    
+     }
+
+     .OverflowParentL > div{
+        border:white;
+    }
+    
+    .OverflowParentL{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+        
+        overflow-x: scroll;
+          /* this container has a side scroll */
+        overflow-y: hidden;
+          /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+    }
+    
+    .kidL{
+        grid-area: section1;
+       
+    }
+    #openL{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/london.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2L{
+        grid-area: section3;
+        background-color:black;
+    }
+    #openL1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/london2.jpg);
+        background-size:100% 100%
+    }
+    .kid4L{
+        grid-area: section5;
+        border:solid;
+       
+    }
+    #youtubeL{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal4-inside4 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeL {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont4:hover,
+.mcont4:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PARIS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.containerP > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerP{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* https://wallpapertag.com/ */
+    
+
+}.headerP{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(/images/box-logo.gif);
+    /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerP2{ 
+    grid-area: header2;
+    background-image: url(images/parispano.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.textboxP{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top: -50px;
+    /* raise the text higher to the top. */
+    opacity:0.7;
+    
+}
+#cityP{
+    align-content: center;
+    font-weight: bold;
+    color: white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveP 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveP {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+    
+}
+    
+
+.navP{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+     /* wanted the nav bar to stay along the entire page */
+     width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+    
+}
+.blogP{
+    grid-area: blog;
+    background-image: url(images/Supreme-Paris.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    
+    
+
+}
+.blogP:hover {
+    opacity: 1;
+   
+    transition: 3s;
+}  
+
+.blogP2{
+    grid-area: blog2;
+}
+
+.lilP{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilP:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+    
+     }
+
+     .OverflowParentP > div{
+        border:white;
+    }
+    
+    .OverflowParentP{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+        
+        overflow-x: scroll;
+        /* this container has a side scroll */
+        overflow-y: hidden;
+          /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+        
+    }
+    
+    .kidP{
+        grid-area: section1;
+       
+    }
+    #openP{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/paris.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2P{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openP1{
+        grid-area: section4;
+        border:solid;
+        
+        background-image: url(images/bogo/Paris2.jpg);
+        background-size:100% 100%
+    }
+    .kid4P{
+        grid-area: section5;
+        border:solid;
+        
+    }
+
+    #youtubeP{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+    /* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal5 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal5-inside5 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeP {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont5:hover,
+.mcont5:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Harajuku~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.containerH > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+.containerH{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* https://wallpapertag.com/ */
+    
+
+}.headerH{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(images/box-logo.gif);
+    /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerH2{ 
+    grid-area: header2;
+    background-image: url(images/harajukupano.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.textboxH{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top: -50px;
+    /* raise the text higher to the top. */
+    
+    
+}
+#cityH{
+    align-content: center;
+    font-weight: bold;
+    color:white;
+    /* different color due to background brightness */
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveH 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveH {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+    
+}
+
+.navH{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+    
+    
+}
+.blogH{
+    grid-area: blog;
+    background-image: url(images/supreme-harajuku.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    
+    
+
+}
+.blogH:hover{
+    opacity: 1;
+   
+    transition: 3s;
+}  
+
+.blog2H{
+    grid-area: blog2;
+}
+
+.lilH{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilH:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+         /* for the table it self to be transparent */
+    
+     }
+
+     .OverflowParentH > div{
+        border:solid;
+    }
+    
+    .OverflowParentH{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+        background-color:black;
+        overflow-x: scroll;
+        /* this container has a side scroll */
+        overflow-y: hidden;
+          /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+        
+    }
+    
+    .kidH{
+        grid-area: section1;
+       
+    }
+    #openH{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/harajuku.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2H{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openH1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/Harajuku.jpg);
+        background-size:100% 100%
+    }
+    .kid4H{
+        grid-area: section5;
+        border:solid;
+      
+    }
+
+    #youtubeH{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal6 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal6-inside6 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeH {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont6:hover,
+.mcont6:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~Shibuya~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.containerS > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerS{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* https://wallpapertag.com/ */
+
+}.headerS{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(images/box-logo.gif);
+      /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerS2{ 
+    grid-area: header2;
+    background-image: url(images/shibuyapano.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.textboxS{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top:-50px;
+    /* text aligned on the top */
+    
+}
+#cityS{
+    align-content: center;
+    font-weight: bold;
+    color:white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveS 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveS {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+}
+
+
+.navS{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+    
+    
+}
+.blogS{
+    grid-area: blog;
+    background-image: url(images/supreme-shibuyaOUT.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   
+    
+
+}
+.blogS:hover {
+    opacity: 1;
+
+    transition: 3s;
+}  
+
+.blog2S{
+    grid-area: blog2;
+}
+
+.lilS{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilS:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+         /* for the table it self to be transparent */
+    
+     }
+
+     .OverflowParentS > div{
+        border:white;
+    }
+    
+    .OverflowParentS{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+        
+        overflow-x: scroll;
+         /* this container has a side scroll */
+        overflow-y: hidden;
+          /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+        
+    }
+    
+    .kidS{
+        grid-area: section1;
+       
+    }
+    #openS{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/shibuya.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2S{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openS1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/Shibuya.jpg);
+        background-size:100% 100%
+    }
+    .kid4S{
+        grid-area: section5;
+        border:solid;
+        
+    }
+    #youtubeS{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal7 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal7-inside7 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeS {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont7:hover,
+.mcont7:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Daikanyama~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.containerDAI > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerDAI{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* https://wallpapertag.com/ */
+
+}.headerDAI{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(images/box-logo.gif);
+      /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerDAI2{ 
+    grid-area: header2;
+    background-image: url(images/daikanyamaPano.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.textboxD{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top:-50px;
+    /* text aligned on the top  */
+   
+
+}
+#cityD{
+    align-content: center;
+    font-weight: bold;
+    color: rgb(228, 76, 101);
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveD 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveD {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+}
+.navDAI{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+    
+    
+}
+.blogDAI{
+    grid-area: blog;
+    background-image: url(images/supreme-daikanyama2.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    
+    
+
+}
+.blogDAI:hover {
+    opacity: 1;
+   
+    transition: 3s;
+}  
+
+.blog2DAI{
+    grid-area: blog2;
+}
+
+.lilD{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilD:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+         /* for the table it self to be transparent */
+    
+     }
+
+     .OverflowParentDAI > div{
+        border:white;
+    }
+    
+    .OverflowParentDAI{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+        
+        overflow-x: scroll;
+         /* this container has a side scroll */
+        overflow-y: hidden;
+         /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+        
+    }
+    
+    .kidDAI{
+        grid-area: section1;
+      
+    }
+    #openDAI{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/daikanyama.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2DAI{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openDAI1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/Daikanyama.jpg);
+        background-size:100% 100%
+    }
+    .kid4DAI{
+        grid-area: section5;
+        border:solid;
+        
+    }
+    #youtubeDAI{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal8 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal8-inside8 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeD {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont8:hover,
+.mcont8:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nagoya~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.containerNA > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerNA{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    /* https://wallpapertag.com/ */
+    
+
+}.headerNA{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(images/box-logo.gif);
+    /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerNA2{ 
+    grid-area: header2;
+    background-image: url(images/nagoyaPano.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.textboxNA{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top:-50px;
+    /* text aligned on the bottom for visibility */
+    opacity:0.9;
+}
+#cityNA{
+    align-content: center;
+    font-weight: bold;
+    color: white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveLA 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveLA {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+}
+
+.navNA{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+    
+    
+}
+.blogNA{
+    grid-area: blog;
+    background-image: url(images/supreme-nagoya.jpeg);
+    background-size: 100% 100%;
+    /* background imaage to fit screen */
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   
+   
+    
+
+}
+.blogNA:hover {
+    opacity: 1;
+   
+    transition: 3s;
+}  
+
+.blog2NA{
+    grid-area: blog2;
+}
+
+.lilN{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilN:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+         /* for the table it self to be transparent */
+    
+     }
+
+     .OverflowParentNA > div{
+        border:white;
+    }
+    
+    .OverflowParentNA{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+       
+        overflow-x: scroll;
+         /* this container has a side scroll */
+        overflow-y: hidden;
+         /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+        
+    }
+    
+    .kidNA{
+        grid-area: section1;
+       
+    }
+    #openNA{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/nagoya.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2NA{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openNA1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/Nagoya.jpg);
+        background-size:100% 100%
+    }
+    .kid4NA{
+        grid-area: section5;
+        border:solid;
+        
+    }
+
+    #youtubeNA{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal9 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal9-inside9 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeNA {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont9:hover,
+.mcont9:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OSAKA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.containerO > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerO{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+     /* https://wallpapertag.com/ */
+    
+
+}.headerO{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(images/box-logo.gif);
+    /* https://img.buzzfeed.com/ */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerO2{ 
+    grid-area: header2;
+    background-image: url(images/osakapano.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.textboxO{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top:-60px;
+    /* text aligned on the top for visibility */
+    opacity:0.9;
+
+}
+#cityO{
+    align-content: center;
+    font-weight: bold;
+    color:white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveO 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveO {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+}
+.navO{
+    grid-area: nav;
+    display: flex;
+
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .9;
+    /* wanted to be little transparent  */
+    
+    
+    
+    
+}
+.blogO{
+    grid-area: blog;
+    background-image: url(images/supreme-osaka.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   
+    
+
+}
+.blogO:hover {
+    opacity: 1;
+  
+    transition: 3s;
+}  
+
+.blog2O{
+    grid-area: blog2;
+}
+
+.lilO{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilO:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+         /* for the table it self to be transparent */
+    
+     }
+     .OverflowParentO > div{
+        border:white;
+    }
+    
+    .OverflowParentO{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+       
+        overflow-x: scroll;
+         /* this container has a side scroll */
+        overflow-y: hidden;
+         /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+    }
+    
+    .kidO{
+        grid-area: section1;
+       
+    }
+    #openO{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/osaka.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2O{
+        grid-area: section3;
+        background-color:black;
+            
+    }
+    #openO1{
+        grid-area: section4;
+        border:solid;
+     
+        background-image: url(images/bogo/Osaka.jpg);
+        background-size:100% 100%
+    }
+    .kid4O{
+        grid-area: section5;
+        border:solid;
+       
+    }
+    #youtubeO{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal10 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal10-inside10 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeO {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont10:hover,
+.mcont10:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~Fukuoka~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.containerF > div {
+    border:solid white;
+    /* border for the grid */
+
+}
+
+.containerF{
+    display: grid;
+     /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* define how many rows there will be */
+    grid-template-rows: 50px 200px 300px 700px 750px;
+    grid-template-areas: 
+    /* name our template section */
+    "nav nav nav nav"
+    "header header header header"
+    "header2 header2 header2 header2"
+    "blog blog blog blog"
+    "blog2 blog2 blog2 blog2";
+    grid-gap: 10px;
+    background-image: url(images/background.jpg);
+    
+
+}.headerF{
+    grid-area: header; 
+    text-align: center;
+    background-image: url(images/box-logo.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.headerF2{ 
+    grid-area: header2;
+    background-image: url(images/fukuokapano.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.textboxF{
+   
+    
+    display:flex;
+    justify-content: center;
+    margin-top:-50px;
+    /* text aligned on the bottom for visibility */
+    
+}
+#cityF{
+    align-content: center;
+    font-weight: bold;
+    color: white;
+    font-family: bold italic;
+    font-size:60px;
+    text-shadow: 3px 3px 0px #000;
+    /* text shadow added for visual pop */
+    animation:moveLA 15s;
+    /* keyfram animation name, span over 10secs, no repeat */
+    transition:2s;
+    /* transition to make the cycle smoother */
+   
+    
+}
+
+@keyframes moveLA {
+    /* 0% is the point at which is starts to animate*/
+    0% {
+        margin-left:-1000px;
+        /* wanted the keyframe to start at the leftside  */
+     
+    }
+    50%{
+        margin-left:900px;
+        /* chose 50% for smoother finish, 900px to travel to rightside
+        and finish back at the center (content already centered) */
+   
+      
+    }
+}
+.navF{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    /* wanted the nav bar to stay along the entire page */
+    width: 100%;
+     /* with fixed position, had to reset the x-axis */
+    opacity: .8;
+    /* wanted to be little transparent  */
+    
+    
+    
+    
+}
+.blogF{
+    grid-area: blog;
+    background-image: url(images/supreme-fukuoka.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+   
+    
+
+}
+.blogF:hover {
+    opacity: 1;
+  
+    transition: 3s;
+}  
+
+.blog2F{
+    grid-area: blog2;
+}
+
+
+.lilF{
+    position:absolute;
+    opacity:0;
+    
+    z-index:3;
+    }
+    .lilF:hover{
+        opacity:1;
+       
+        transition: 3s;
+        z-index:3;
+    }
+    td{
+        
+        /* lines through table data */
+         text-decoration: none;
+     }
+     #tablep3{
+         margin-top:250px;
+         margin-left:340px;
+         /* centering */
+         position: absolute;
+         width:700px;
+         /* table size x-axis */
+         height:200px;
+         /* table height */
+         table-layout: fixed;
+         /* made the table 50/50 split space columns */
+         
+         z-index:3;
+         background-color: aliceblue;
+         opacity:0.8;
+         /* for the table it self to be transparent */
+    
+     }
+     .OverflowParentF > div{
+        border:white;
+    }
+    
+    .OverflowParentF{
+        display:grid;
+        grid-template-columns: 650px 800px 900px 1000px;
+        grid-template-rows: 300px 200px 200px;
+        grid-template-areas: 
+        "section1 section2 section4 sectionX"
+        "section1 section2 section5 sectionX"
+        "section3 section2 section5 sectionX";
+        grid-gap:10px;
+        grid-area: blog2;
+       
+        overflow-x: scroll;
+         /* this container has a side scroll */
+        overflow-y: hidden;
+          /* only allowing side scroll, no scroll on y-axis within this container */
+    /* inner grid container  */
+    }
+    
+    .kidF{
+        grid-area: section1;
+      
+    }
+    #openF{
+        grid-area: section2;
+        
+        
+        background-image: url(images/storefront/fukuoka.jpg);
+        background-size:100% 100%;
+       
+    }
+    .kid2F{
+        grid-area: section3;
+        background-color:black;
+        /* grid area that contains google map */
+            
+    }
+     /* id for button for modal */
+    #openF1{
+        grid-area: section4;
+        border:solid;
+       
+        background-image: url(images/bogo/Fukuoka.jpg);
+        background-size:100% 100%;
+    }
+    .kid4F{
+        grid-area: section5;
+        border:solid;
+        
+    }
+    #youtubeF{
+        margin-top:45px;
+        margin-left:150px;
+        /* centering */
+    }
+
+/* modal LAbogo starts*********************************/
+
+ /* The Modal (background) */
+ .modal11 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color:pink;
+    opacity:0.9;
+   
+    
+    
+}
+/* Modal Content/Box */
+.modal11-inside11 {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; 
+    background-color:red;
+    font-weight:bold;
+    color:white;
+}
+/* The Close Button */
+.closeF {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.mcont11:hover,
+.mcont11:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+/* "X" button focus and hover */

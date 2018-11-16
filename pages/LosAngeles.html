@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supreme LA</title>
+    <!-- tab title -->
+    <link rel="stylesheet" href="../main.css">
+    <!-- link to CSS -->
+</head>
+
+<!-- I purposely made all the pages except the index/home page identical, format and ect.
+     This process took a while for everything to match up, but I did it for the flow the pages and overall mininmalism
+    I filled comments on this -->
+
+
+<body>
+    <div class="containerLA">
+        <!-- main container for the grids -->
+        <div class="child navLA">
+            <!-- 1st grid area -->
+            <a href="../index.html">Home</a>
+            <a id="usa" href="NYC MAN.html">Manhattan</a>
+            <a id="usa" href="NYC BK.html">Brooklyn</a>
+            <a id="uk" href="London.html">London</a>
+            <a id="france" href="PARIS.html">Paris</a>
+            <a id="japan" href="Harajuku.html">Tokyo (Harukuju)</a>
+            <a id="japan" href="Shibuya.html">Tokyo (Shibuya)</a>
+            <a id="japan" href="Daikanyama.html">Tokyo (Daikanyama)</a>
+            <a id="japan" href="Nagoya.html">Nagoya</a>
+            <a id="japan" href="Osaka.html">Osaka</a>
+            <a id="japan" href="Fukuoka.html">Fukuoka</a>
+        </div>
+        <!-- main nav for all the pages, 11 A links total, each counties has their own ID for flag image -->
+
+        <div class="child headerLA"></div>
+        <div class="headerLA2">
+            <div class="textboxLA">
+                <p id="cityLA">☀️ Los Angeles ☀️</p>
+            </div>
+        </div>
+        <div class="child blogLA">
+
+            <h1 id="hoverinstruct">hover over the middle</h1>
+            <!-- instruction to make the table appear  -->
+            <div class="lilLA">
+                <table id="tablep3">
+                    <!-- table set up for basic info -->
+                    <tr>
+                        <!-- first row of table -->
+                        <td><strong>Address:</strong></td>
+                        <!-- used strong to bold -->
+                        <td> 439 N. Fairfax Ave. Los Angeles, CA 90036
+                        </td>
+
+                        <!-- data for the row -->
+                    </tr>
+
+                    <tr>
+                        <td><strong>Date Opened:</strong></td>
+                        <!-- used strong to bold -->
+                        <td>April 2004</td>
+                        <!-- href link directly to wiki page -->
+                    </tr>
+
+                    <tr>
+                        <td><strong>Special Box Logo: </strong></td>
+                        <td>YES (Hebrew Box Logo) </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Special Box Logo Availability:</strong></td>
+                        <td>LA Location Only (Grand Opening)</td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+
+        </div>
+
+        <div class="child blogLA2">
+            <div class="child OverflowParent">
+                <div class="kid">
+                    <iframe id="googlemapU" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1652.3169377771997!2d-118.362547!3d34.0788986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b93332920e19%3A0xfd9262386a2a8a8d!2sSupreme!5e0!3m2!1sen!2sus!4v1537221486816"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <button id="openLA">
+                    <!-- button for modal -->
+                    <span>Click Here</span>
+                    <!-- font box logo like -->
+                </button>
+
+                <div class="kid2">
+                    <!-- div for ul & li -->
+                    <p id="visitfontU">
+                        <h1>Places to visit near <span>Supreme</span> LA</h1>
+                        <ul>
+                            <li>The Hundreds (Street wear apparel)</li>
+                            <li>Hall of Fame (Street wear apparel) </li>
+                            <li>Flight Club LA (Sneaker shop)</li>
+                            <li>Jon & Vinny's (Italian eatery)</li>
+                            <li>Diamond Bakery(Italian eatery)</li>
+
+                        </ul>
+                    </p>
+                </div>
+                <button id="openLA1">
+                    <!-- box logo button -->
+                    <span>Click Here</span>
+                </button>
+                <div class="kid4">
+                        <iframe id="youtubeLA" width="560" height="315" src="https://www.youtube.com/embed/qNP2OftHi3g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- fairfax modal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div id="modalLA" class="modal">
+                <!-- ID set to use getElementbyID -->
+                <!-- modal content inside the main div class=modal -->
+                <div class="modal-inside">
+                    <span class="closeLA LAX">&times;</span>
+                    <!-- &times; = "X" -->
+                    <p>"A special box logo released alongside the grand opening of this store — a red logo on a white tee
+                        with “Supreme” loosely translated in Hebrew writing. This was related to the store being in the city
+                        of To this day, the tee remains one of the hardest releases to find, even in used condition–let alone
+                        new."" "hypebeast.com"
+                        <!-- article from www.hypebeast.com by By Eddie Eng -->
+                    </p>
+                </div>
+
+            </div>
+            <!-- fairfax modal end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+            <!-- LAbogo modal starts~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div id="modalLA1" class="modal1">
+                <!-- ID set to use getElementbyID -->
+                <!-- modal content inside the main div class=modal -->
+                <div class="modal1-inside1">
+                    <span class="closeLA1 LAX1">&times;</span>
+                    <!-- &times; = "X" -->
+                    <p>"This Hebrew variant of the box logo was introduced for the opening of Supreme’s second U.S. store
+                        in 2004. The language is spoken by more than 9 million people worldwide and the logo was a nod to
+                        Los Angeles’ Fairfax neighborhood, where the store was located, which was historically a hub of Jewish
+                        culture in the city." -Hypebeast.com-
+                        <!-- article from www.hypebeast.com by By Eddie Eng -->
+                    </p>
+                </div>
+
+            </div>
+            <!-- LAbogo modal ends~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
+
+        </div>
+
+        
+    </div>
+</body>
+<script src="../js/LA.js">
+    // JS link
+
+
+</script>
+
+</html>
