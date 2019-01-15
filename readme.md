@@ -14,9 +14,9 @@ Also an Intro course to bridge students into General Assembly's  12 weeks Web De
 
 This was also an intro to basics of HTML5, CSS, and Javascript.  
 
-The course was taught in a span of 4 weeks and on the end of the 5th week we were given the instructions and details of the project by the end of the week 5.
+The course was taught in a span of 4 weeks with no prior experience in coding, and on the end of the 5th week we were given the instructions and details of the project by the end of the week 5.
 
-We were instructed not to use any framework for styling and used stritly HTML/CSS/Javascript for this project.
+We were instructed not to use any framework for styling and used strictly HTML/CSS/Javascript for this project.
 
 ## Technologies Used
 
